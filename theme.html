@@ -132,7 +132,7 @@
 				  
 				  <div class="post-date">{{ post.created_at|format_date }}</div>
 	              <div class="post-title"><a href="{{ post.permalink }}">{{ post.title }}</a></div>
-	              <div class="post-content" data-type-cleanup="true">{{ post.content|striptags|truncate(255) }}</div>
+	              <div class="post-content" data-type-cleanup="true">{{ post.content|striptags|truncate(150) }}</div>
 	              <div class="post-detail"><a href="{{ post.permalink }}">자세히 알아보기</a></div>
 	              
 	            </div>
